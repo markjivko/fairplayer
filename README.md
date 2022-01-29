@@ -6,6 +6,6 @@
     </a>
 </p>
 
-FairPlayer is an Android Music player with focus on [sound quality](https://markjivko.com/fairplayer/) and [personalization](https://github.com/markjivko/fairplayer-sdk).
+FairPlayer is an Android Music player with focus on [sound quality](https://markjivko.com/fairplayer/) and [personalization (SDK)](https://github.com/markjivko/fairplayer-sdk).
 
 VLC's native library powers our best-in-class equalizer for the ultimate sound experience.
