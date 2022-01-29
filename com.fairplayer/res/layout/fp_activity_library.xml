@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:fp="http://schemas.android.com/apk/res/com.fairplayer" >
+       
+    <RelativeLayout
+        android:id="@+id/fp_content_wrapper"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <LinearLayout
+            android:id="@+id/fp_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/fp_bar_height"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <com.fairplayer.LayoutTab
+                android:id="@+id/fp_sliding_tabs"
+                android:paddingLeft="@dimen/fp_sliding_tab_padding_sides"
+                android:paddingRight="@dimen/fp_sliding_tab_padding_sides"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/fp_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1" />
+
+            <HorizontalScrollView
+                android:id="@+id/fp_limiter_scroller"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left">
+
+                <LinearLayout
+                    android:id="@+id/fp_limiter_layout"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" />
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <com.fairplayer.ElementSlider
+            android:id="@+id/fp_sliding_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom|left"
+            android:orientation="horizontal"
+            fp:ssHandler="@+id/fp_bottombar_controls"
+            fp:ssChild="@+id/fp_content">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal">
+                <include layout="@layout/fp_bottombar_controls" android:id="@+id/fp_bottombar_controls" />
+            </LinearLayout>
+
+            <fragment 
+                class="com.fairplayer.FragmentShowQueue"
+                android:id="@+id/fp_queue"
+                android:layout_width="fill_parent" android:layout_height="fill_parent" />
+
+        </com.fairplayer.ElementSlider>
+        
+    </RelativeLayout>
+    
+</merge>

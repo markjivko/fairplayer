@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main Layout -->
+    <string name="appName">FairPlayer</string>
+    <string name="appDisplayName">FairPlayer by Mark Jivko</string>
+    <string name="appDescription">FairPlayer</string>
+    
+    <!-- Settings/Status bar -->
+    <string name="settings_section_status_bar">Status bar</string>
+    <string name="settings_section_status_bar_info">Manage status bar controls and notifications</string>
+    <string name="settings_status_bar_title">Status bar controls</string>
+    <string name="settings_status_bar_info">Show the playback controls in the status bar</string>
+    <string name="settings_status_bar_now_playing_title">Now playing</string>
+    <string name="settings_status_bar_now_playing_info">Show a notification when a new song starts playing</string>
+    
+    <!-- Settings/Time control -->
+    <string name="settings_section_time_control">Time control</string>
+    <string name="settings_section_time_control_info">Manage time related settings</string>
+    <string name="settings_seek_step_title">Seek amount</string>
+    <string name="settings_seek_step_info">Swiping up and down on the album art allows you to skip</string>
+    <string name="settings_timeout_title">Inactivity timer</string>
+    <string name="settings_timeout_info">Stop the playback after a period of inactivity</string>
+    <string name="settings_timeout_value_title">Inactivity period</string>
+    
+    <!-- Settings/Sound control -->
+    <string name="settings_section_sound_control">Sound Control</string>
+    <string name="settings_section_sound_control_info">Manage sound related settings</string>
+    <string name="settings_equalizer_title">Equalizer</string>
+    <string name="settings_equalizer_info">Fine-tune your audio experience</string>
+    <string name="settings_blur_keep_playing_title">Keep playing</string>
+    <string name="settings_blur_keep_playing_info">Allow music to keep playing when another app takes the audio focus. Some apps may hold on to the audio focus until closed.</string>
+    <string name="settings_blur_keep_playing_volume_title">Keep playing volume</string>
+    
+    <!-- Settings/Themes -->
+    <string name="settings_section_themes">Themes</string>
+    <string name="settings_section_themes_info">Personalize your experience</string>
+    <string name="settings_themes_default_title">Apply default theme</string>
+    <string name="settings_themes_default_info">Get back to the original</string>
+    <string name="settings_themes_more_title">Get more themes</string>
+    <string name="settings_themes_more_info">Search for something beautiful</string>
+    <string name="settings_themes_install_title">Install</string>
+    <string name="settings_themes_install_info">Download and install</string>
+    <string name="settings_themes_animated">Animated</string>
+    <string name="settings_themes_apply_title">Apply</string>
+    <string name="settings_themes_apply_created_by">Created by</string>
+    <string name="settings_themes_applying">Applying theme...</string>
+    <string name="settings_themes_applying_last">Applying most recent theme...</string>
+    <string name="settings_themes_applying_default">Applying the default theme...</string>
+    
+    <!-- Settings/SD Scanner -->
+    <string name="settings_section_scanner">File Scanner</string>
+    <string name="settings_section_scanner_info">Scan your device for music files</string>
+    <string name="settings_scanner_start_title">Scan</string>
+    <string name="settings_scanner_start_info">Start scanning the root folder</string>
+    <string name="settings_scanner_root_title">Set the root</string>
+    <string name="settings_scanner_root_info">Set the root folder for the scan activity and library files</string>
+    <string name="settings_scanner_progress_label_init">Initializing scan</string>
+    <string name="settings_scanner_progress_label_done">Scan finished</string>
+    <string name="settings_scanner_progress_label_analyzed">Scanned</string>
+    <string name="settings_scanner_progress_label_list_init">Gathering file list</string>
+    <string name="settings_scanner_progress_label_database_init">Database query started</string>
+    <string name="settings_scanner_progress_error_retry">Retrying in 1 second...</string>
+    <string name="settings_scanner_progress_error_bad_path">Scan failed: bad path specified</string>
+    
+    <!-- Settings/Ads -->
+    <string name="settings_section_ads">Ads</string>
+    <string name="settings_section_ads_info">Control the ads you see</string>
+    <string name="settings_ads_about_title">Loyalty reward program</string>
+    <string name="settings_ads_about_info">Learn more about our loyalty reward program</string>
+    <string name="settings_ads_about_info_extra">Ads help pay our bills and improve our product. But ads can also be a bit annoying. That is why we think you, the user, must have control over how many ads you see. A smaller percentage means less ads. You can lower the ads percentage even more by using our music player for longer. These are the Loyalty Reward Levels</string>
+    <string name="settings_ads_level">Level</string>
+    <string name="settings_ads_percent_title">Ads probability</string>
+    <string name="settings_ads_percent_info_current">You can set a minimum of %d per cent for ads probability.</string>
+    <string name="settings_ads_percent_info_next">You will get to the next level in %s.</string>
+    <string name="settings_ads_skipped">Skipped ad. Thank you for your support!</string>
+    
+    <!-- Settings/About -->
+    <string name="settings_section_about">About</string>
+    <string name="settings_section_about_privacy">Privacy Policy</string>
+    
+    <!-- Licenses -->
+    <string name="settings_licenses_title">Licenses</string>
+    <string name="settings_licenses_dialog_title">Licenses</string>
+    <string name="settings_licenses_dialog_button">Close</string>
+    
+    <!-- Browser -->
+    <string name="fp_browser_no_display">Could not show</string>
+    <string name="fp_browser_select">Select</string>
+    
+    <!-- Widgets -->
+    <string name="fp_widget_no_media">No songs found</string>
+    <string name="fp_widget_tap_to_start">Tap to start</string>
+    
+    <!-- Menu items -->
+    <string name="fp_menu_settings">Settings</string>
+    <string name="fp_menu_library">Library</string>
+    <string name="fp_menu_share">Share</string>
+    <string name="fp_menu_shuffle_all">Shuffle songs</string>
+    <string name="fp_menu_shuffle_albums">Shuffle albums</string>
+    <string name="fp_menu_shuffle_none">No shuffle</string>
+    <string name="fp_menu_repeat_all">Repeat</string>
+    <string name="fp_menu_repeat_none">No repeat</string>
+    <string name="fp_menu_repeat_random">Random</string>
+    <string name="fp_menu_repeat_song">Repeat current song</string>
+    <string name="fp_menu_now_playing">Now playing</string>
+    <string name="fp_menu_search">Search</string>
+    <string name="fp_menu_expand">Expand</string>
+    <string name="fp_menu_delete">Delete</string>
+    <string name="fp_menu_play">Play</string>
+    <string name="fp_menu_play_next">Play next</string>
+    <string name="fp_menu_rename">Rename</string>
+    <string name="fp_menu_edit">Edit</string>
+    <string name="fp_menu_save_as_playlist">Save as playlist...</string>
+    <string name="fp_menu_add_to_playlist">Add to playlist...</string>
+    <string name="fp_menu_sort_by">Sort by</string>
+    <string name="fp_menu_done">Done</string>
+    <string name="fp_menu_remove">Remove</string>
+    <string name="fp_menu_open">Open</string>
+    <string name="fp_menu_play_all">Play all</string>
+    <string name="fp_menu_more_artist">More from artist</string>
+    <string name="fp_menu_more_album">More from album</string>
+    <string name="fp_menu_queue_add">Enqueue</string>
+    <string name="fp_menu_queue_add_album">Enqueue album</string>
+    <string name="fp_menu_queue_add_artist">Enqueue artist</string>
+    <string name="fp_menu_queue_add_genre">Enqueue genre</string>
+    <string name="fp_menu_queue_add_all">Enqueue all</string>
+    <string name="fp_menu_theme_of_the_day">Theme of the day</string>
+    <string name="fp_menu_theme_of_the_day_no">No, thank you</string>
+    <string name="fp_menu_theme_of_the_day_rate">Would you like to rate our theme of the day?</string>
+    <string name="fp_menu_theme_of_the_day_rate_name">Would you like to rate our theme of the day, %s?</string>
+    <string name="fp_menu_theme_of_the_day_rate_button">Rate theme</string>
+    <string name="fp_menu_theme_of_the_day_check">Interested in installing our theme of the day?</string>
+    <string name="fp_menu_theme_of_the_day_check_name">Interested in installing our theme of the day, %s?</string>
+    <string name="fp_menu_theme_of_the_day_check_button">Install theme</string>
+    <string name="fp_menu_queue_show">Show queue</string>
+    <string name="fp_menu_queue_hide">Hide queue</string>
+    <string name="fp_menu_queue_empty">Empty queue</string>
+    <string name="fp_menu_queue_empty_rest">Dequeue rest</string>
+    <string name="fp_menu_queue_empty_warn">The queue is empty. Select a song or play all</string>
+    
+    <!-- Menu notifications -->
+    <string name="fp_menu_notif_random_enabled">Random enabled</string>
+    <string name="fp_menu_notif_track_error">Failed to load song %s</string>
+    <string name="fp_menu_notif_queue_empty">Queue cleared</string>
+    <string name="fp_menu_notif_delete_confirm_item">Delete %s?</string>
+    <string name="fp_menu_notif_delete_confirm_file">Delete file %s?</string>
+    <string name="fp_menu_notif_delete_success">\'%s\' deleted</string>
+    <string name="fp_menu_notif_delete_error">Failed to delete %s</string>
+    
+    <!-- Playlist -->
+    <string name="fp_playlist_new">New playlist...</string>
+    <string name="fp_playlist_new_name">Playlist name</string>
+    <string name="fp_playlist_create">Create</string>
+    <string name="fp_playlist_replace">Replace</string>
+    <string name="fp_playlist_delete">Delete %s?</string>
+    <string name="fp_playlist_favorites">Favorites</string>
+
+    <!-- Library -->
+    <string name="fp_library_unknown">Unknown</string>
+    <string name="fp_library_header_songs">All songs</string>
+    <string name="fp_library_section_songs">Songs</string>
+    <string name="fp_library_section_genres">Genres</string>
+    <string name="fp_library_section_albums">Albums</string>
+    <string name="fp_library_section_artists">Artists</string>
+    <string name="fp_library_section_playlists">Playlists</string>
+    <string name="fp_library_section_files">Files</string>
+    <string name="fp_library_limiter_artist">Artist</string>
+    <string name="fp_library_limiter_album">Album</string>
+    <string name="fp_library_limiter_genre">Genre</string>
+    
+    <!-- Media -->
+    <string name="fp_media_sort_reverse">Reverse sort</string>
+    <string name="fp_media_sort_name">Name</string>
+    <string name="fp_media_sort_num_of_tracks">Number of tracks</string>
+    <string name="fp_media_sort_year">Year</string>
+    <string name="fp_media_sort_date_added">Date added</string>
+    <string name="fp_media_sort_album_track">Album, track number</string>
+    <string name="fp_media_sort_artist_album">Artist, album</string>
+    <string name="fp_media_sort_artist_year">Artist, year</string>
+    <string name="fp_media_sort_artist_album_track">Artist, album, track number</string>
+    <string name="fp_media_sort_artist_album_title">Artist, album, title</string>
+    <string name="fp_media_sort_song_playcount">Playcount</string>
+    
+    <!-- Tutorial -->
+    <string name="fp_tutorial_welcome_title">1/4. Welcome!</string>
+    <string name="fp_tutorial_welcome_info">Before we get started, please grant us access to your music files. Thank you!</string>
+    <string name="fp_tutorial_scroller_title">2/4. The Music Library</string>
+    <string name="fp_tutorial_scroller_info">Navigate through your songs, files, genres, albums, artists and playlists or play all.</string>
+    <string name="fp_tutorial_bottombar_title">3/4. Now Playing</string>
+    <string name="fp_tutorial_bottombar_info">Tap to see the current song or swipe up to access the queue.</string>
+    <string name="fp_tutorial_playall_title">4/4. Play all</string>
+    <string name="fp_tutorial_playall_info">We have reached the end of our tutorial. Tap the \'Play all\' button and enjoy your music!</string>
+    <string name="fp_tutorial_cover_title">The album art</string>
+    <string name="fp_tutorial_cover_info">This section shows the current song\'s album art, if available. You can swipe horizontally or vertically.</string>
+    <string name="fp_tutorial_controls_title">Song controls</string>
+    <string name="fp_tutorial_controls_info">Use the main buttons to play, pause or skip the current song. This section also features information about the current song: author, album, song length etc.</string>
+    <string name="fp_tutorial_themes_title">Awesome themes</string>
+    <string name="fp_tutorial_themes_info">You can personalize the look and feel of your music player with hundreds of themes from curated authors.</string>
+    <string name="fp_tutorial_equalizer_title">Equalizer</string>
+    <string name="fp_tutorial_equalizer_info">Control every aspect of your audio experience with our powerful equalizer.</string>
+    
+    <!-- Equalizer -->
+    <string name="fp_equalizer_label_preamp">Preamplifier</string>
+    <string name="fp_equalizer_label_volume">Volume</string>
+    <string name="fp_equalizer_label_button_preset">Preset</string>
+    <string name="fp_equalizer_label_button_action_save">Save</string>
+    <string name="fp_equalizer_label_button_action_save_title">Save preset</string>
+    <string name="fp_equalizer_label_button_action_update">Update</string>
+    <string name="fp_equalizer_label_button_action_update_title">Update preset</string>
+    <string name="fp_equalizer_label_button_action_cancel">Cancel</string>
+    <string name="fp_equalizer_label_button_action_delete">Delete</string>
+    <string name="fp_equalizer_toast_enabled">Enabling equalizer...</string>
+    <string name="fp_equalizer_toast_disabled">Disabling equalizer...</string>
+    <string name="fp_equalizer_toast_loaded">Loading preset \'%s\'...</string>
+    <string name="fp_equalizer_toast_saved">Added a custom equalizer preset</string>
+    <string name="fp_equalizer_toast_updated">Updated custom equalizer preset</string>
+    <string name="fp_equalizer_toast_deleted">Deleted custom equalizer preset</string>
+    
+    <!-- Plurals/Time -->
+    <plurals name="fp_plurals_second">
+        <item quantity="one">1 second</item>
+        <item quantity="other">%d seconds</item>
+    </plurals>
+    <plurals name="fp_plurals_minute">
+        <item quantity="one">1 minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="fp_plurals_hour">
+        <item quantity="one">1 hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    
+    <!-- Plurals/Song -->
+    <plurals name="fp_plurals_song_playing">
+        <item quantity="one">Playing</item>
+        <item quantity="other">%d songs playing</item>
+    </plurals>
+    <plurals name="fp_plurals_song_enqueued">
+        <item quantity="one">Enqueued</item>
+        <item quantity="other">%d songs enqueued</item>
+    </plurals>
+    <plurals name="fp_plurals_song_deleted">
+        <item quantity="one">Deleted</item>
+        <item quantity="other">%d songs deleted</item>
+    </plurals>
+    <plurals name="fp_plurals_song_playlist_added">
+        <item quantity="one">Added to %2$s</item>
+        <item quantity="other">%1$d songs added to %2$s</item>
+    </plurals>
+    <plurals name="fp_plurals_song_playlist_removed">
+        <item quantity="one">Removed from %2$s</item>
+        <item quantity="other">%1$d songs removed from %2$s</item>
+    </plurals>
+    <plurals name="fp_plurals_day">
+        <item quantity="other">%d days</item>
+        <item quantity="one">1 day</item>
+    </plurals>
+    
+    <!-- Notifications -->
+    <string name="fp_notification_rate_title">Please rate us</string>
+    <string name="fp_notification_rate_message">If you like FairPlayer, please rate us</string>
+    <string name="fp_notification_rate_helper">Slide up to rate</string>
+    <string name="fp_notification_loyalty_title">Loyalty reward program</string>
+    <string name="fp_notification_loyalty_message">Congratulations, you have reached level %d!</string>
+    <string name="fp_notification_vc_title">New version available</string>
+    <string name="fp_notification_vc_message">You should update FairPlayer to the latest version</string>
+    
+    <!-- Sharing -->
+    <string name="fp_sharing_loading">Loading...</string>
+    <string name="fp_sharing_internet">Please connect to the Internet and try again.</string>
+    <string name="fp_sharing_call_to_action">Share your experience with others and help us create a better product!</string>
+    <string name="fp_sharing_thank_you">Thank you for sharing! As a gift, we removed the ads for %d minutes!</string>
+    <string name="fp_sharing_quote_default">Listening to music with FairPlayer</string>
+    <string name="fp_sharing_quote_theme">Listening to music using theme %s for FairPlayer</string>
+    <string name="fp_sharing_quote_song">Listening to %1$s by %2$s with FairPlayer</string>
+    <string name="fp_sharing_quote_theme_song">Listening to %1$s by %2$s using theme %3$s for FairPlayer</string>
+    <string name="fp_sharing_button_ok">OK</string>
+    <string name="fp_sharing_button_share">Share song and theme</string>
+    <string name="fp_sharing_button_rate">Rate FairPlayer</string>
+</resources>

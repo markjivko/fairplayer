@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fp="http://schemas.android.com/apk/res/com.fairplayer"
+    android:persistent="true">
+    
+    <PreferenceScreen
+        android:title="@string/settings_scanner_root_title"
+        android:summary="@string/settings_scanner_root_info">
+        <intent 
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.fairplayer"
+            android:targetClass="com.fairplayer.ActivityBrowser" />
+    </PreferenceScreen>
+    
+    <com.fairplayer.SettingsProgressBarScanner
+        android:key="settings_seek_step"
+        android:title="@string/settings_scanner_start_title"
+        android:summary="@string/settings_scanner_start_info" />
+        
+</PreferenceScreen>

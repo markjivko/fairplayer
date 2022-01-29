@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fp="http://schemas.android.com/apk/res/com.fairplayer"
+    android:persistent="true">
+    
+    <PreferenceScreen
+        android:title="@string/settings_equalizer_title"
+        android:summary="@string/settings_equalizer_info">
+        <intent 
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.fairplayer"
+            android:targetClass="com.fairplayer.ActivityEqualizer" />
+    </PreferenceScreen>
+    
+    <CheckBoxPreference
+        android:key="settings_blur_keep_playing_enabled"
+        android:title="@string/settings_blur_keep_playing_title"
+        android:summary="@string/settings_blur_keep_playing_info"
+        android:defaultValue="false" />
+    
+    <com.fairplayer.SettingsSeekBar
+        android:dependency="settings_blur_keep_playing_enabled"
+        android:key="settings_blur_keep_playing_volume"
+        android:title="@string/settings_blur_keep_playing_volume_title"
+        android:defaultValue="50"
+        fp:ssbInfoTemplate="%.0f%%" />
+    
+</PreferenceScreen>

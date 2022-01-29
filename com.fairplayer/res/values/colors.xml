@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Fp Color Row Divider -->
+    <color name="fp_color_row_divider">#ff282828</color>
+
+    <!-- Fp Color Row Title -->
+    <color name="fp_color_row_title">#ff282828</color>
+
+    <!-- Fp Color Row Subtitle -->
+    <color name="fp_color_row_subtitle">#c8282828</color>
+
+    <!-- Fp Color Bar Title -->
+    <color name="fp_color_bar_title">#ff282828</color>
+
+    <!-- Fp Color Bar Subtitle -->
+    <color name="fp_color_bar_subtitle">#c8282828</color>
+
+    <!-- Fp Color Button -->
+    <color name="fp_color_button">#ff838383</color>
+
+    <!-- Fp Color Library Tab Indicator -->
+    <color name="fp_color_library_tab_indicator">#ff282828</color>
+
+    <!-- Fp Color Library Tab Text -->
+    <color name="fp_color_library_tab_text">#ff282828</color>
+
+    <!-- Fp Color Playback Title -->
+    <color name="fp_color_playback_title">#ff282828</color>
+
+    <!-- Fp Color Playback Subtitle -->
+    <color name="fp_color_playback_subtitle">#c8282828</color>
+
+    <!-- Fp Color Playback Seekbar -->
+    <color name="fp_color_playback_seekbar">#ff282828</color>
+
+    <!-- Fp Color Equalizer Label -->
+    <color name="fp_color_equalizer_label">#ff282828</color>
+
+    <!-- Fp Color Widget Title -->
+    <color name="fp_color_widget_title">#ff282828</color>
+
+    <!-- Fp Color Widget Subtitle -->
+    <color name="fp_color_widget_subtitle">#c8282828</color>
+</resources>

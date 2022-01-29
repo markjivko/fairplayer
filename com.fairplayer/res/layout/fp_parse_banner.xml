@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fp_parse_banner"
+    android:layout_width="match_parent"
+    android:layout_height="65dip"
+    android:orientation="horizontal"
+    android:background="@drawable/fp_parse_banner_bkg_d_g"
+    android:gravity="left" >
+
+    <ImageView
+        android:id="@+id/fp_parse_banner_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dip"
+        android:layout_marginLeft="5dip"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/fp_parse_banner_icon_m" />
+
+    <TextView
+        android:id="@+id/fp_parse_banner_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fp_parse_banner_button_g"
+        android:text="Check out these themes"
+        android:textSize="16dip"
+        android:gravity="center"
+        android:textIsSelectable="false"
+        android:textColor="#ff34495e"
+        android:textStyle="bold" />
+    
+</LinearLayout>

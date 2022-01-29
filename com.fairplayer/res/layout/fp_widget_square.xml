@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">    
+
+    <ImageView
+        android:id="@+id/fp_widget_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fp_widget_preview_square"
+        android:scaleType="fitXY"/>
+
+    <FrameLayout
+        android:id="@+id/fp_widget_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="@dimen/fp_widget_padding"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            
+            <TextView
+                android:padding="@dimen/fp_widget_padding"
+                android:id="@+id/fp_title"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:textColor="#ff000000"
+                android:textSize="20sp"
+                android:scrollHorizontally="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:duplicateParentState="true"
+                android:visibility="invisible" >
+
+                <requestFocus 
+                    android:focusable="true" 
+                    android:focusableInTouchMode="true"
+                    android:duplicateParentState="true" />
+
+            </TextView>
+            
+            <ImageView
+                android:layout_margin="@dimen/fp_widget_padding"
+                android:id="@+id/fp_cover"
+                android:visibility="invisible"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+            
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/fp_warning"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:text="@string/fp_widget_tap_to_start"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:visibility="visible" />           
+
+        <LinearLayout
+            android:id="@+id/fp_buttons"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="@dimen/fp_bar_height"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:layout_height="fill_parent" />
+            
+            <ImageButton
+                android:id="@+id/fp_previous"
+                android:layout_height="wrap_content"
+                android:layout_width="0px"
+                android:layout_weight="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fp_control_prev" />
+
+            <ImageButton
+                android:id="@+id/fp_play_pause"
+                android:layout_height="wrap_content"
+                android:layout_width="0px"
+                android:layout_weight="3"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/fp_next"
+                android:layout_height="wrap_content"
+                android:layout_width="0px"
+                android:layout_weight="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fp_control_next" />
+            
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:layout_height="fill_parent" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+    
+</FrameLayout>

@@ -1,0 +1,62 @@
+<resources>
+    <!-- Settings elements -->
+    <declare-styleable name="SettingsSeekBar">
+        <attr name="ssbIncrement" format="integer" />
+        <attr name="ssbMax" format="integer"/>
+        <attr name="ssbInfo" format="string"/>
+        <attr name="ssbInfoTemplate" format="string"/>
+        <attr name="ssbExtraInfo" format="string" />
+        <attr name="ssbExtraKey" format="string" />
+    </declare-styleable>
+    <declare-styleable name="SettingsSlider">
+        <attr name="ssHandler" format="integer"/>
+        <attr name="ssChild" format="integer"/>
+    </declare-styleable>
+    
+    <!-- Drag/Sort list view -->
+    <declare-styleable name="DragSortListView">
+        <attr name="collapsed_height" format="dimension" />
+        <attr name="drag_scroll_start" format="float" />
+        <attr name="max_drag_scroll_speed" format="float" />
+        <attr name="float_background_color" format="color" />
+        <attr name="remove_mode">
+            <enum name="clickRemove" value="0" />
+            <enum name="flingRemove" value="1" />
+        </attr>
+        <attr name="track_drag_sort" format="boolean"/>
+        <attr name="float_alpha" format="float"/>
+        <attr name="slide_shuffle_speed" format="float"/>
+        <attr name="remove_animation_duration" format="integer"/>
+        <attr name="drop_animation_duration" format="integer"/>
+        <attr name="drag_enabled" format="boolean" />
+        <attr name="sort_enabled" format="boolean" />
+        <attr name="remove_enabled" format="boolean" />
+        <attr name="drag_start_mode">
+            <enum name="onDown" value="0" />
+            <enum name="onMove" value="1" />
+            <enum name="onLongPress" value="2"/>
+        </attr>
+        <attr name="drag_handle_id" format="integer" />
+        <attr name="fling_handle_id" format="integer" />
+        <attr name="click_remove_id" format="integer" />
+        <attr name="use_default_controller" format="boolean" />
+    </declare-styleable>
+    
+    <!-- Showcase -->
+    <declare-styleable name="ShowcaseView">
+        <attr name="sv_backgroundColor" format="color|reference" />
+        <attr name="sv_detailTextColor" format="color|reference" />
+        <attr name="sv_titleTextColor" format="color|reference" />
+        <attr name="sv_buttonBackgroundColor" format="color|reference" />
+        <attr name="sv_buttonForegroundColor" format="color|reference" />
+        <attr name="sv_buttonText" format="string|reference" />
+        <attr name="sv_detailTextAppearance" format="reference" />
+        <attr name="sv_titleTextAppearance" format="reference" />
+        <attr name="sv_showcaseColor" format="color|reference" />
+        <attr name="sv_tintButtonColor" format="boolean|reference" />
+    </declare-styleable>
+    <declare-styleable name="ShowcaseTheme">
+        <attr name="showcaseViewStyle" format="reference" />
+    </declare-styleable>
+    
+</resources>

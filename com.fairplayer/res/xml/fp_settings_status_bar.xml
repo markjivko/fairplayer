@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:persistent="true">
+    
+    <CheckBoxPreference
+        android:key="settings_status_bar_enabled"
+        android:title="@string/settings_status_bar_title"
+        android:defaultValue="true"
+        android:summary="@string/settings_status_bar_info" />        
+                
+    <CheckBoxPreference
+        android:key="settings_status_bar_now_playing_enabled"
+        android:title="@string/settings_status_bar_now_playing_title"
+        android:defaultValue="false"
+        android:summary="@string/settings_status_bar_now_playing_info" />
+        
+</PreferenceScreen>

@@ -1,0 +1,93 @@
+# ProGuard settings
+
+-verbose
+-dontpreverify
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontskipnonpubliclibraryclassmembers
+-libraryjars libs
+-optimizations !code/simplification/arithmetic,!code/simplification/cast,!field/*,!class/merging/*
+-optimizationpasses 2
+
+# Do not optimize/shrink LibVLC, because of native code 
+-keep class org.videolan.libvlc.** { *; } 
+-keep class **.ActivitySettings$** { *; } 
+
+-keepattributes InnerClasses, EnclosingMethod
+-keep class * extends java.util.ListResourceBundle {
+    protected Object[][] getContents();
+}
+
+-keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
+    public static final *** NULL;
+}
+
+-keepnames @com.google.android.gms.common.annotation.KeepName class *
+-keepclassmembernames class * {
+    @com.google.android.gms.common.annotation.KeepName *;
+}
+
+-keepnames class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+
+-keepclassmembers class **.Ads$AdPlacement {
+    public <fields>;
+}
+-keepclassmembers class **.Ads$AdType {
+    public <fields>;
+}
+-keepclassmembers class **.Ads$AdInfo {
+    public <fields>;
+}
+
+-keep class **.R$*
+
+-dontwarn com.google.**
+-dontwarn android.support.v*.**
+-keep class android.support.v*.* { *; }
+-keep interface android.support.v*.* { *; }
+
+-assumenosideeffects class android.util.Log {
+    public static *** d(...);
+    public static *** e(...);
+    public static *** w(...);
+    public static *** v(...);
+    public static *** i(...);
+}
+
+# Admob
+-keep class com.google.android.gms.ads.** { *; }
+
+# Google
+-keep class com.google.android.gms.common.GooglePlayServicesUtil {*;}
+-keep class com.google.android.gms.ads.identifier.** { *; }
+-dontwarn com.google.android.gms.**
+
+-keepattributes *Annotation*
+-keepattributes Signature
+
+-keepclassmembers class * implements java.io.Serializable {
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+# Project Common Pro-Guard Rules (generated automatically 2022-01-29 09:38:12 by APK Factory)
+-dontwarn android.webkit.**
+-keep class android.webkit.** { *; }
+
+-dontwarn org.apache.http.**
+-keep class org.apache.http.** { *; }
+
+-dontwarn com.google.android.gms.**
+-keep class com.google.android.gms.** { *; }
+
+-dontwarn com.google.ads.**
+-keep class com.google.ads.** { *; }

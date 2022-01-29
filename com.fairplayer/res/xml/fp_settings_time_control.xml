@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fp="http://schemas.android.com/apk/res/com.fairplayer"
+    android:persistent="true">
+    
+    <com.fairplayer.SettingsSeekBar
+        android:title="@string/settings_seek_step_title"
+        android:key="settings_seek_step"
+        android:defaultValue="10"
+        fp:ssbMax="60"
+        fp:ssbInfo="@string/settings_seek_step_info"
+        fp:ssbInfoTemplate="%s #s" />
+        
+    <CheckBoxPreference
+        android:key="settings_timeout_enabled"
+        android:title="@string/settings_timeout_title"
+        android:summary="@string/settings_timeout_info"
+        android:defaultValue="false" />
+    
+    <com.fairplayer.SettingsSeekBarExponential
+        android:key="settings_timeout_value"
+        android:title="@string/settings_timeout_value_title"
+        android:dependency="settings_timeout_enabled" />
+        
+</PreferenceScreen>

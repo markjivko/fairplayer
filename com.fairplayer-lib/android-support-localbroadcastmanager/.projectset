@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psf version="2.0">
+<provider id="org.eclipse.team.svn.core.svnnature">
+<project reference="1.0.1,https://github.com/dandar3/android-support-annotations/tags/28.0.0,android-support-annotations,30ced7bb63e3001813d49cfba31d5f56;https://github.com/dandar3/android-support-annotations;https://github.com/dandar3/android-support-annotations;branches;tags;trunk;true;aa34aa4b-e5c0-a7b4-83f5-ce57b7db7bff;https://github.com/dandar3/android-support-annotations;;false;;;0"/>
+<project reference="1.0.1,https://github.com/dandar3/android-support-localbroadcastmanager/tags/28.0.0,android-support-localbroadcastmanager,80761a4266e3001813d49cfba31d5f56;https://github.com/dandar3/android-support-localbroadcastmanager;https://github.com/dandar3/android-support-localbroadcastmanager;branches;tags;trunk;true;c5581b00-1fbb-1e3c-cb52-ce57b7db7bff;https://github.com/dandar3/android-support-localbroadcastmanager;;false;;;0"/>
+</provider>
+</psf>

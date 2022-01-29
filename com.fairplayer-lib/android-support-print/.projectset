@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psf version="2.0">
+<provider id="org.eclipse.team.svn.core.svnnature">
+<project reference="1.0.1,https://github.com/dandar3/android-support-annotations/tags/28.0.0,android-support-annotations,304a1982a3e300181b8cead3bcdc770e;https://github.com/dandar3/android-support-annotations;https://github.com/dandar3/android-support-annotations;branches;tags;trunk;true;aa34aa4b-e5c0-a7b4-83f5-ce57b7db7bff;https://github.com/dandar3/android-support-annotations;;false;;;0"/>
+<project reference="1.0.1,https://github.com/dandar3/android-support-print/tags/28.0.0,android-support-print,608f1c6ea3e300181b8cead3bcdc770e;https://github.com/dandar3/android-support-print;https://github.com/dandar3/android-support-print;branches;tags;trunk;true;34aafc20-6543-30eb-8942-ce57b7db7bff;https://github.com/dandar3/android-support-print;;false;;;0"/>
+</provider>
+</psf>

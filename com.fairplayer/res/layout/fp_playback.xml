@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:fp="http://schemas.android.com/apk/res/com.fairplayer" >
+    
+    <LinearLayout 
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/fp_content"
+        android:orientation="vertical" >
+        
+        <FrameLayout 
+            android:id="@+id/fp_cover_frame"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal" >
+            
+            <com.fairplayer.FpCoverView
+                android:id="@+id/fp_cover_view"
+                android:scaleType="fitXY"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent" />
+            
+            <ImageView 
+                android:id="@+id/fp_cover_view_over"
+                android:background="@drawable/fp_cover_frame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY" />
+                
+            <ImageView 
+                android:id="@+id/fp_cover_view_animation"
+                android:background="@android:color/transparent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY" />
+            
+        </FrameLayout>
+       	
+        <FrameLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="vertical">
+        
+            <LinearLayout
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:orientation="vertical">
+		        
+                <LinearLayout
+                    android:id="@+id/fp_playback_info"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal" >
+                    <include layout="@layout/fp_playback_info" />
+                </LinearLayout>
+		        
+                <LinearLayout
+                    android:id="@+id/fp_playback_controls"
+                    android:layout_height="100dp"
+                    android:layout_width="fill_parent"
+                    android:clipChildren="false"
+                    android:orientation="horizontal" >
+                    <include layout="@layout/fp_playback_controls" />
+                </LinearLayout>
+		        
+                <LinearLayout 
+                    android:id="@+id/fp_playback_seekbar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal" >
+                    <include layout="@layout/fp_playback_seekbar" />
+                </LinearLayout>
+		        
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+	            
+                <com.fairplayer.ElementImageButton
+                    android:id="@+id/fp_play_pause"
+                    android:layout_height="140dp"
+                    android:layout_width="wrap_content"
+                    android:scaleType="fitCenter" />
+		        
+            </LinearLayout>
+	        	        
+        </FrameLayout>
+        
+    </LinearLayout>
+    
+    <com.fairplayer.ElementSlider
+        android:id="@+id/fp_sliding_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom|left"
+        android:orientation="horizontal"
+        fp:ssHandler="@+id/fp_slider_handle"
+        fp:ssChild="@+id/fp_content">
+
+        <Space
+            android:id="@+id/fp_slider_handle"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"/>
+        
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fp_bar_height"/>
+
+        <fragment 
+            class="com.fairplayer.FragmentShowQueue"
+            android:id="@+id/fp_queue"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+    </com.fairplayer.ElementSlider>
+    
+    <com.fairplayer.ControlbarTop
+        android:orientation="horizontal"
+        android:id="@+id/fp_controlbar_top"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fp_bar_height" >
+        
+        <com.fairplayer.ElementImageButton
+            android:layout_alignParentLeft="true"
+            android:id="@+id/fp_favorites"
+            android:layout_height="@dimen/fp_playback_top_bar_icon_size"
+            android:layout_marginLeft="@dimen/fp_playback_top_bar_icon_indent"
+            android:layout_marginTop="@dimen/fp_playback_top_bar_icon_padding_top"
+            android:paddingTop="@dimen/fp_playback_top_bar_icon_padding_top"
+            android:layout_width="wrap_content"
+            android:scaleType="fitCenter" />  
+        
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/fp_content_controls">
+            
+            <com.fairplayer.ElementImageButton
+                android:id="@+id/fp_library"
+                android:layout_height="@dimen/fp_playback_top_bar_icon_size"
+                android:layout_marginRight="@dimen/fp_playback_top_bar_icon_indent"
+                android:paddingTop="@dimen/fp_playback_top_bar_icon_padding_top"
+                android:layout_width="wrap_content"
+                android:scaleType="fitCenter" />
+            
+            <com.fairplayer.ElementImageButton
+                android:id="@+id/fp_themes"
+                android:layout_height="@dimen/fp_playback_top_bar_icon_size"
+                android:layout_marginRight="@dimen/fp_playback_top_bar_icon_indent"
+                android:paddingTop="@dimen/fp_playback_top_bar_icon_padding_top"
+                android:layout_width="wrap_content"
+                android:scaleType="fitCenter" />
+            
+            <com.fairplayer.ElementImageButton
+                android:id="@+id/fp_equalizer"
+                android:layout_height="@dimen/fp_playback_top_bar_icon_size"
+                android:layout_marginRight="@dimen/fp_playback_top_bar_icon_indent"
+                android:paddingTop="@dimen/fp_playback_top_bar_icon_padding_top"
+                android:layout_width="wrap_content"
+                android:scaleType="fitCenter" />
+            
+        </LinearLayout>
+            
+    </com.fairplayer.ControlbarTop>
+    
+</merge>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/fp_queue_slider"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal" >
+            
+            <SeekBar
+                android:id="@+id/fp_seek_bar"
+                android:thumb="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:minHeight="32dip"
+                android:maxHeight="32dip"
+                android:paddingLeft="18dip"
+                android:paddingRight="18dip" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal" >
+            
+            <TextView
+                android:id="@+id/fp_elapsed"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fp_text_size_playback_seekbar"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="left" />
+            
+            <TextView 
+                android:id="@+id/fp_format"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fp_text_size_playback_seekbar"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/fp_duration"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fp_text_size_playback_seekbar"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right" />
+            
+        </LinearLayout>
+    </LinearLayout>
+</merge>

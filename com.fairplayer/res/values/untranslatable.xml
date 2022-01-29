@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Project information -->
+    <string name="projectVersion">1.0 Stone</string>
+    <string name="authorName">Mark Jivko</string>   
+    <string name="settings_licenses_dialog_style">
+        p.license {
+            background:grey;
+        }
+        body {
+            font-family: sans-serif;
+            overflow-wrap: break-word;
+        }
+        pre {
+            background-color: #eeeeee;
+            padding: 1em;
+            white-space: pre-wrap;
+        }
+    </string>
+</resources>

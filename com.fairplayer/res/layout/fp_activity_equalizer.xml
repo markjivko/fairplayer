@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:fp="http://schemas.android.com/apk/res/com.fairplayer" >
+
+    <LinearLayout 
+        android:id="@+id/fp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <HorizontalScrollView 
+            android:id="@+id/fp_equalizer_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:fillViewport="true"
+            android:fadeScrollbars="false">
+
+            <LinearLayout 
+                android:id="@+id/fp_equalizer_bands"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"/>
+
+        </HorizontalScrollView>
+
+        <LinearLayout 
+            android:id="@+id/fp_equalizer_knobs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+            
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical" >
+
+                <com.fairplayer.ElementKnob
+                    android:id="@+id/fp_equalizer_preamp"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:layout_width="match_parent" />
+
+                <TextView
+                    android:id="@+id/fp_equalizer_preamp_label"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/fp_text_size_equalizer_label_knobs"
+                    android:text="@string/fp_equalizer_label_preamp" />
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical" >
+
+                <com.fairplayer.ElementKnob
+                    android:id="@+id/fp_equalizer_volume"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:layout_width="match_parent" />
+
+                <TextView
+                    android:id="@+id/fp_equalizer_volume_label"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/fp_text_size_equalizer_label_knobs"
+                    android:text="@string/fp_equalizer_label_volume" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout 
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fp_bar_height" >
+
+            <LinearLayout 
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent" >
+                
+	            <Spinner 
+	                android:id="@+id/fp_equalizer_button_presets"
+	                android:textSize="@dimen/fp_text_size_equalizer_buttons"
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:gravity="center"
+	                android:layout_height="match_parent"
+	                android:layout_centerVertical="true"/>
+	
+	            <Button
+	               	android:id="@+id/fp_equalizer_button_action" 
+	               	android:textSize="@dimen/fp_text_size_equalizer_buttons"
+	               	android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:gravity="center"
+	                android:layout_height="match_parent"
+	                android:layout_centerVertical="true" />
+            
+            </LinearLayout>
+            
+            <ToggleButton
+                android:id="@+id/fp_equalizer_button_enable"
+                android:textSize="@dimen/fp_text_size_equalizer_buttons"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+        
+</merge>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:divider="?android:attr/dividerHorizontal"
+    android:showDividers="middle"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="2dip"
+            android:layout_marginTop="2dip"
+            android:layout_marginBottom="2dip"
+            android:src="@drawable/icon" />
+        
+        <TextView
+            android:id="@+id/fp_file_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dip"
+            android:layout_marginTop="12dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="4dip" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+		
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/fp_button_play"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fp_menu_play"
+            android:singleLine="true" />
+                
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/fp_button_enqueue"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fp_menu_queue_add"
+            android:singleLine="true" />
+		
+    </LinearLayout>
+</LinearLayout>

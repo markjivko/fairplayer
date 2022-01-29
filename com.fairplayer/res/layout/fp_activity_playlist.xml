@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:fp="http://schemas.android.com/apk/res/com.fairplayer" >
+
+    <LinearLayout 
+        android:id="@+id/fp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <com.fairplayer.DragSortListView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:dslv="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/fp_list"
+            android:divider="@null"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            dslv:drag_enabled="false"
+            dslv:drag_start_mode="onMove"
+            dslv:remove_enabled="true"
+            dslv:remove_mode="flingRemove"
+            dslv:fling_handle_id="@+id/fp_dragger"
+            dslv:drag_handle_id="@+id/fp_dragger" />
+            
+    </LinearLayout>
+</merge>

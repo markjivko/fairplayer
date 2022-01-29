@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">    
+
+    <ImageView
+        android:id="@+id/fp_widget_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fp_widget_preview_bar"
+        android:scaleType="fitXY"/>
+    
+    <LinearLayout 
+        android:id="@+id/fp_widget_holder"
+        android:padding="@dimen/fp_widget_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/fp_cover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:adjustViewBounds="true"
+                android:visibility="invisible"
+                android:scaleType="fitCenter" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/fp_warning"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:text="@string/fp_widget_tap_to_start"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:baselineAligned="false" >
+
+            <LinearLayout
+                android:id="@+id/fp_text_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" >
+
+                <TextView
+                    android:id="@+id/fp_title"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp"
+                    android:scrollHorizontally="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:duplicateParentState="true"
+                    android:visibility="invisible" >
+
+                    <requestFocus 
+                        android:focusable="true" 
+                        android:focusableInTouchMode="true"
+                        android:duplicateParentState="true" />
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom" >
+
+                <ImageButton
+                    android:id="@+id/fp_previous"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/fp_control_prev"
+                    android:visibility="invisible"
+                    android:padding="5dp" />
+
+                <ImageButton
+                    android:id="@+id/fp_play_pause"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible"
+                    android:padding="5dp" />
+
+                <ImageButton
+                    android:id="@+id/fp_next"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/fp_control_next"
+                    android:visibility="invisible"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+</FrameLayout>

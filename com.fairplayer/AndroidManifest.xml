@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fairplayer"
+    android:versionName="1.0 Strong Pink"
+    android:versionCode="1"
+    android:installLocation="auto" >
+    
+    <uses-sdk 
+        android:minSdkVersion="16" 
+        android:targetSdkVersion="28" />
+    
+    <!-- Wake lock and audio -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    
+    <!-- Dangerous permissions as of android 23 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+    <!-- Permissions for Ads -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    
+    <!-- Ads location not required -->
+    <uses-feature android:name="android.hardware.location" android:required="false" />
+    <uses-feature android:name="android.hardware.location.network" android:required="false" />
+
+    <!-- Application -->
+    <application
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:largeHeap="true"
+        android:allowBackup="false"
+        android:debuggable="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="@string/appName" >
+
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+
+        <!-- Now playing -->
+        <activity
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.fairplayer.ActivityNowplaying"
+            android:theme="@style/StyleFullScreen"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.APP_MUSIC" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Music library -->
+        <activity
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.fairplayer.ActivityLibrary"
+            android:theme="@style/StyleFullScreen"
+            android:launchMode="singleTask">
+        </activity>
+        
+        <!-- Equalizer -->
+        <activity
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.fairplayer.ActivityEqualizer"
+            android:theme="@style/StyleFullScreen"
+            android:launchMode="singleTask" />
+        
+        <!-- Playlist editor -->
+        <activity
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.fairplayer.ActivityPlaylist"
+            android:launchMode="singleTask" />
+        
+        <!-- Preferences -->
+        <activity
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.fairplayer.ActivitySettings" />
+        
+        <!--File browser-->
+        <activity
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.fairplayer.ActivityBrowser" />
+        
+        <!-- Open with... -->
+        <activity 
+            android:name="com.fairplayer.ActivityPicker" 
+            android:theme="@android:style/Theme.Holo.Dialog.MinWidth"
+            android:excludeFromRecents="true" 
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="file"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="application/ogg"/>
+                <data android:mimeType="application/x-ogg"/>
+                <data android:mimeType="audio/ogg"/>
+                <data android:mimeType="audio/flac"/>
+                <data android:mimeType="audio/x-flac"/>
+                <data android:mimeType="application/flac"/>
+                <data android:mimeType="application/x-flac"/>
+                <data android:mimeType="application/itunes"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="content"/>
+                <data android:host="media"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="application/ogg"/>
+                <data android:mimeType="application/x-ogg"/>
+                <data android:mimeType="application/x-flac"/>
+                <data android:mimeType="application/itunes"/>
+            </intent-filter>
+        </activity>
+        
+        <!-- Widgets -->
+        <receiver
+            android:name="com.fairplayer.WidgetBar"
+            android:label="FairPlayer bar widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/fp_widget_bar" />
+        </receiver>
+        <receiver
+            android:name="com.fairplayer.WidgetSquare"
+            android:label="FairPlayer square widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/fp_widget_square" />
+        </receiver>
+        
+        <!-- Music control -->
+        <receiver android:name="com.fairplayer.FpReceiverMediaButtonEvent" >
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        
+        <!-- Rendering -->
+        <service android:name="com.fairplayer.FpServiceRendering">
+            <intent-filter>
+                <action android:name="com.fairplayer.fp.PLAY" />
+                <action android:name="com.fairplayer.fp.PAUSE" />
+                <action android:name="com.fairplayer.fp.TOGGLE_PLAYBACK" />
+                <action android:name="com.fairplayer.fp.NEXT_SONG" />
+                <action android:name="com.fairplayer.fp.PREVIOUS_SONG" />
+            </intent-filter>
+        </service>
+        
+        <!-- Notifications -->
+        <service android:name="com.fairplayer.FpNotificationHelper" />
+        <receiver android:name="com.fairplayer.FpNotification" />
+        
+        <!-- Ads -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+    </application>
+</manifest>

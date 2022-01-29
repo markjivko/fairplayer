@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="250dip"
+    android:minHeight="40dip"
+    android:initialLayout="@layout/fp_widget_bar"
+    android:previewImage="@drawable/fp_widget_preview_bar"
+    android:resizeMode="horizontal" />

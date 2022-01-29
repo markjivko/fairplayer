@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="A1" default="help">
+    <property file="ant.properties" />
+    <property name="java.target" value="1.7" />
+    <property name="java.source" value="1.7" />
+    <loadproperties srcFile="local.properties" />
+    <loadproperties srcFile="project.properties" />
+    
+    <fail message="sdk.dir is missing. Make sure to generate local.properties using 'android update project'" unless="sdk.dir" />
+    
+    <import file="${sdk.dir}/tools/ant/build.xml" />
+    <target name="doc" depends="-build-setup, -code-gen">
+        <condition property="missing-docs">
+            <not><available file="${sdk.dir}/docs/reference" type="dir" /></not>
+        </condition>
+        <if condition="${missing-docs}">
+            <then><echo>Install "Documentation for Android SDK" from the Android SDK Manager to generate links to SDK documentation.</echo></then>
+        </if>
+        <javadoc
+            destdir="doc"
+            link="${sdk.dir}/docs/reference"
+            sourcepath="${source.absolute.dir}:${gen.absolute.dir}"
+            bootclasspathref="android.target.classpath"
+            classpathref="project.libraries.jars"
+            access="private" />
+    </target>
+</project>

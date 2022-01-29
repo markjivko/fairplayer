@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/fp_row_padding"
+    android:weightSum="2"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+    
+    <com.fairplayer.ElementSmallCover
+        android:id="@+id/fp_cover"
+        android:scaleType="centerCrop"
+        android:layout_width="@dimen/fp_row_cover_size"
+        android:layout_height="@dimen/fp_row_cover_size"
+        android:padding="@dimen/fp_row_cover_padding"
+        android:layout_marginLeft="@dimen/fp_row_cover_indend"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone" />
+        
+    <TextView
+        android:id="@+id/fp_text"
+        android:maxLines="2"
+        android:gravity="left|center_vertical"
+        android:layout_width="0px"
+        android:layout_height="@dimen/fp_row_height"
+        android:padding="@dimen/fp_button_padding"
+        android:ellipsize="marquee"
+        android:layout_weight="2" />
+
+    <ImageView
+        android:id="@+id/fp_more"
+        android:scaleType="center"
+        android:layout_width="@dimen/fp_row_height"
+        android:layout_height="@dimen/fp_row_height"
+        android:visibility="gone" />
+    
+</LinearLayout>

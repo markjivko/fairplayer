@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fairplayer.ControlbarBottom
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/fp_bar_height" >
+    
+    <LinearLayout
+        android:layout_height="@dimen/fp_bar_height"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:id="@+id/fp_content_controls">
+
+        <ImageView
+            android:id="@+id/fp_cover"
+            android:scaleType="centerCrop"
+            android:layout_width="@dimen/fp_bar_cover_size"
+            android:layout_height="@dimen/fp_bar_cover_size"
+            android:padding="@dimen/fp_bar_cover_padding"
+            android:layout_marginLeft="@dimen/fp_bar_cover_indent"
+            android:layout_gravity="center_vertical" />
+        
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/fp_bar_text_indent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            
+            <TextView
+                android:id="@+id/fp_title"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:ellipsize="marquee"
+                android:layout_width="fill_parent"
+                android:textColor="@android:color/background_light"
+                android:layout_height="wrap_content" />
+            
+            <TextView
+                android:id="@+id/fp_artist"
+                android:textSize="12sp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:ellipsize="marquee"
+                android:layout_width="fill_parent"
+                android:textColor="@android:color/secondary_text_dark"
+                android:layout_height="wrap_content" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <SearchView
+        android:visibility="gone"
+        android:layout_height="@dimen/fp_bar_height"
+        android:layout_width="fill_parent"
+        android:iconifiedByDefault="false"
+        android:imeOptions="actionSearch|flagNoFullscreen"
+        android:id="@+id/fp_search_view" />
+
+</com.fairplayer.ControlbarBottom>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Library -->
+    <dimen name="fp_bar_height">48dip</dimen>
+    <dimen name="fp_bar_cover_size">40dip</dimen>
+    <dimen name="fp_bar_cover_padding">5dip</dimen>
+    <dimen name="fp_bar_cover_indent">12dip</dimen>
+    <dimen name="fp_bar_text_indent">8dip</dimen>
+    <dimen name="fp_bar_icon_size">40dip</dimen>
+    <dimen name="fp_bar_icon_padding_top">5dip</dimen>
+    <dimen name="fp_bar_icon_indent">5dip</dimen>
+    <dimen name="fp_row_height">48dip</dimen>
+    <dimen name="fp_row_highlight_width">5dip</dimen>
+    <dimen name="fp_row_text_indent">5dip</dimen>
+    <dimen name="fp_row_padding">5dip</dimen>
+    <dimen name="fp_row_cover_size">45dip</dimen>
+    <dimen name="fp_row_cover_padding">0dip</dimen>
+    <dimen name="fp_row_cover_indend">5dip</dimen>
+    <dimen name="fp_row_divider_width">2dip</dimen>
+    <dimen name="fp_sliding_tab_padding_sides">10dip</dimen>
+    <dimen name="fp_sliding_tab_icon_size">45dip</dimen>
+    <dimen name="fp_sliding_tab_icon_padding">10dip</dimen>
+    <dimen name="fp_sliding_tab_icon_indent">10dip</dimen>
+    
+    <!-- Now playing -->
+    <dimen name="fp_playback_info_padding_top">10dip</dimen>
+    <dimen name="fp_playback_info_padding_bottom">10dip</dimen>
+    <dimen name="fp_playback_top_bar_icon_size">40dip</dimen>
+    <dimen name="fp_playback_top_bar_icon_padding_top">5dip</dimen>
+    <dimen name="fp_playback_top_bar_icon_indent">5dip</dimen>
+    
+    <!-- General -->
+    <dimen name="fp_button_padding">5dip</dimen>
+    
+    <!-- Text size -->
+    <dimen name="fp_text_size_playback_queue">20sp</dimen>
+    <dimen name="fp_text_size_playback_title">20sp</dimen>
+    <dimen name="fp_text_size_playback_subtitle">16sp</dimen>
+    <dimen name="fp_text_size_playback_seekbar">16sp</dimen>
+    <dimen name="fp_text_size_equalizer_label_bar">16sp</dimen>
+    <dimen name="fp_text_size_equalizer_label_knobs">16sp</dimen>
+    <dimen name="fp_text_size_equalizer_buttons">14sp</dimen>
+    
+    <!-- Widget -->
+    <dimen name="fp_widget_padding">5dp</dimen>
+    
+    <!-- Tutorial -->
+    <dimen name="showcase_button_margin">12dp</dimen>
+    <dimen name="showcase_text_padding">24dp</dimen>
+    <dimen name="showcase_action_bar_offset">66dp</dimen>
+    <dimen name="showcase_radius">94dp</dimen>
+    <dimen name="showcase_radius_inner">96dp</dimen>
+    <dimen name="showcase_radius_outer">128dp</dimen>
+    <dimen name="showcase_radius_material">94dp</dimen>
+</resources>

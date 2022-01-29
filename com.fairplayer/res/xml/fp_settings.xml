@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header
+        android:fragment="com.fairplayer.ActivitySettings$SettingsFragmentThemes"
+        android:icon="@drawable/fp_settings_icon_themes"
+        android:summary="@string/settings_section_themes_info"
+        android:title="@string/settings_section_themes" />
+    
+    <header
+        android:fragment="com.fairplayer.ActivitySettings$SettingsFragmentStatusBar"
+        android:icon="@drawable/fp_settings_icon_status_bar"
+        android:summary="@string/settings_section_status_bar_info"
+        android:title="@string/settings_section_status_bar" />
+        
+    <header
+        android:fragment="com.fairplayer.ActivitySettings$SettingsFragmentTimeControl"
+        android:icon="@drawable/fp_settings_icon_time_control"
+        android:summary="@string/settings_section_time_control_info"
+        android:title="@string/settings_section_time_control" />
+    
+    <header
+        android:fragment="com.fairplayer.ActivitySettings$SettingsFragmentSoundControl"
+        android:icon="@drawable/fp_settings_icon_sound_control"
+        android:summary="@string/settings_section_sound_control_info"
+        android:title="@string/settings_section_sound_control" />
+    
+    <header
+        android:fragment="com.fairplayer.ActivitySettings$SettingsFragmentScanner"
+        android:icon="@drawable/fp_settings_icon_scanner"
+        android:summary="@string/settings_section_scanner_info"
+        android:title="@string/settings_section_scanner" />
+    
+    <header
+        android:fragment="com.fairplayer.ActivitySettings$SettingsFragmentAds"
+        android:icon="@drawable/fp_settings_icon_ads"
+        android:summary="@string/settings_section_ads_info"
+        android:title="@string/settings_section_ads" />
+    
+    <header
+        android:fragment="com.fairplayer.ActivitySettings$SettingsFragmentAbout"
+        android:icon="@drawable/fp_settings_icon_about"
+        android:title="@string/settings_section_about" />
+    
+</preference-headers>

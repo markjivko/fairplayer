@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fp="http://schemas.android.com/apk/res/com.fairplayer"
+    android:persistent="true">
+    
+    <com.fairplayer.SettingsAdsAbout
+        android:title="@string/settings_ads_about_title"
+        android:summary="@string/settings_ads_about_info" />
+    
+    <com.fairplayer.SettingsAdsPercent
+        android:key="settings_ads_percent"
+        android:title="@string/settings_ads_percent_title" 
+        android:defaultValue="100" />
+        
+</PreferenceScreen>
